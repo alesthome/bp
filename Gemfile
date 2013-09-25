@@ -13,6 +13,7 @@ gem 'figaro'
 gem 'pg'
 gem 'rolify'
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'css3-microsoft-metro-buttons-rails'
 
 group :development do
   gem 'better_errors'

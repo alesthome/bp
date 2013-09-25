@@ -9,7 +9,7 @@
     <![endif]-->
     <link href="assets/style.css" rel="stylesheet">
     <link href="assets/bootstrap-lightbox.min.css" rel="stylesheet">
-    <link href="assets/m-styles.min.css" rel="stylesheet">
+    <!-- <link href="assets/m-styles.min.css" rel="stylesheet"> -->
     <link href="assets/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="image_src" href="thumbnail.png">
@@ -23,14 +23,12 @@
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
-    <header>
-        <%= render 'layouts/navigation' %>
-        <%= render 'layouts/messages' %>
+  <header>
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %>
   </header>
     <div id="main_container" class="main_container">
-      <div id="main" role="main">
-        <%= yield %>
-      </div>
+      <%= yield %>
       <footer>
       </footer>
     </div> <!--! end of #container -->

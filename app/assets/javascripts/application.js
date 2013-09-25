@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require m-dropdown
+//= require m-radio
 //= require turbolinks
 //= require_tree .
