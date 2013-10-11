@@ -1,7 +1,7 @@
 //sliders autoplay
 	//intro slider
 	$('#carousel_fade_intro').carousel({
-		interval: 2500,
+		interval: 3500,
 		pause: "false"
 	})
 	//works sliders
