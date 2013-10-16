@@ -1,0 +1,18 @@
+<div style="margin-left: 40px;">
+<%= stylesheet_link_tag 'gmaps4rails' %>
+
+<div style="margin-top: 100px; clear:both;"></div>
+
+	<h1>By area code</h1>
+	<p>Total area codes in Brazil: <%= @areacodes.count %></p>
+	
+	<div>
+		<%= gmaps("map_options" => { :raw => "{scrollwheel: false}",
+	                                      "zoom" => 14, "provider_key" => 'AIzaSyDnBAILv04YLrXMZyH2P8_BgsKq4X0TZOY'},
+	                  "markers" => { "data" => @json,
+	                                  :options => { :do_clustering => true, 
+	                                      "clusterer_maxZoom" => 4,
+	                                      "randomize" => true, 
+	                                      "max_random_distance" => 15} }) %>
+	</div>
+</div>

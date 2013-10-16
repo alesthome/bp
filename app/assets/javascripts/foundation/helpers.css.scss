@@ -2,6 +2,34 @@
 // Generic helper classes
 // --------------------------------------------------
 
+.hide-text { text-indent:-9999px; }
+
+// types weight
+.normal { font-weight:normal; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+// text align
+.right {text-align:right;}
+.center {text-align:center;}
+
+
+// margins
+.top10 { margin-top: 10px; }
+.top15 { margin-top: 15px; }
+.top20 { margin-top: 20px; }
+.top60 { margin-top: 60px; }
+.bottom15 { margin-bottom: 15px;}
+.bottom20 { margin-bottom: 20px;}
+.bottom25 {margin-bottom:25px;}
+.bottom30 {margin-bottom:30px;}
+.bottom35 {margin-bottom:35px;}
+.right15  {margin-right:15px;}
+.left40 { margin-left: 40px; }
+.left45 { margin-left: 40px; }
+.left75 { margin-left: 55px; }
+.left170{ margin-left: 170px ; }
+
 // Floats
 // --------------------------------------------------
 

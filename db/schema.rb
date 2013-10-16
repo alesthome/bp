@@ -11,10 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130924194734) do
+ActiveRecord::Schema.define(version: 20131016163630) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "area_codes", force: true do |t|
+    t.integer  "code"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "population"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "area_codes", ["code"], name: "index_area_codes_on_code", unique: true, using: :btree
+
+  create_table "pathologists", force: true do |t|
+    t.string   "name"
+    t.integer  "area_code_id"
+    t.string   "phone"
+    t.integer  "ddd"
+    t.string   "email"
+    t.string   "ramal"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pathologists", ["area_code_id"], name: "index_pathologists_on_area_code_id", using: :btree
+  add_index "pathologists", ["email"], name: "index_pathologists_on_email", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"

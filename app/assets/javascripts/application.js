@@ -15,4 +15,6 @@
 //= require m-dropdown
 //= require m-radio
 //= require turbolinks
+//= require gmaps4rails/gmaps4rails.base
+//= require gmaps4rails/gmaps4rails.googlemaps
 //= require_tree .
